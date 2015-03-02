@@ -15,7 +15,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         // nested list with custom controller
         .state('home.list', {
             url: '/list',
-            templateUrl: 'partial-home-list.html',
+            templateUrl: '../openid2/app/views/partial-about.php',
             controller: function($scope) {
                 $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
             }
@@ -31,7 +31,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('about', {
             url: '/about',
             views: {
-                '': { templateUrl: 'partial-about.php' },
+                '': { templateUrl: '../openid2/public/index.php' },
                 'columnOne@about': { template: 'Look I am a column!' },
                 'columnTwo@about': { 
                     templateUrl: 'table-data.html',

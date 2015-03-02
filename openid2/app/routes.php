@@ -14,7 +14,7 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('partial-about');
 });
 
 Route::get('login/openid', 'AuthController@openIDLogin');
