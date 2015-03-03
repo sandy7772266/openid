@@ -71,7 +71,8 @@ class AuthController_s extends BaseController {
 		$value = Session::get('data_s');
 		//$user_data = Input::get('user');
 		// dd($user_data);
-		$this->mydd($value);
+		//$this->mydd($value);
+		return Redirect::to('/'); // 導回首頁
 	}
 
 	/**
@@ -79,11 +80,11 @@ class AuthController_s extends BaseController {
 	 * 
 	 */
 	public function mydd($data){
-		
-		echo "<pre>";
-		var_dump($data);
-		echo "tt";
-		echo "</pre>";
+		return Redirect::to('/'); // 導回首頁
+		//echo "<pre>";
+		//var_dump($data);
+		//echo "tt";
+		//echo "</pre>";
 	}
 
 }

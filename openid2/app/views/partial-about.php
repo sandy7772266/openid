@@ -3,7 +3,7 @@
 $value = Session::get('data_s');
 if ($value == null){
 ?>
-<p><a href="../openid2/public/login/openid" target="blank" style="font-size:24px;">OpenID 登入</a></p>
+<p><a href="../openid2/public/login/openid"  style="font-size:24px;">OpenID 登入</a></p>
 <?php
 }
 
